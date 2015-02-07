@@ -4,15 +4,18 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
         <title>Mocha/Chai Tests</title>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.css" />
+
+        <style>
+            body {
+                font: 20px/1.5 "Helvetica Neue", Helvetica, sans-serif;
+                padding-left: 20px;
+            }
+        </style>
+
     </head>
 
     <body>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js"></script>
-        <script src="//cdn.rawgit.com/rstacruz/mocha-clean/v0.3.0/index.js"></script>
-
-        <p style="margin:20px 0 0 20px">
+        <p>
             Click <a href="/minMocha.html" title="Start over"><img src="https://raw.githubusercontent.com/johnpapa/pluralsight-ng-testing/master/src/client/images/home.png"
                              style="width: 20px"></a> to start over.<br/>
             Click a <em>description title</em> to run its specs only
@@ -22,6 +25,11 @@
         </p>
 
         <div id="mocha"></div>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js"></script>
+        <script src="//cdn.rawgit.com/rstacruz/mocha-clean/v0.3.0/index.js"></script>
 
         <script>
             mocha.setup('bdd');
