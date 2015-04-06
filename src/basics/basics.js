@@ -21,12 +21,14 @@ describe('basics:', function () {
         it('"false" is truthy', function () {
             expect('false').to.ok;
         });
+        it('0 is falsey', function () {
+            expect(0).to.be.not.ok;
+        });
     });
 
 
 
-
-    describe('#array', function () {
+    describe('array', function () {
         var array;
         beforeEach(function () {
             array = [1, 2, 3];
